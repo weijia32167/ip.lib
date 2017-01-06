@@ -1,6 +1,5 @@
 package com.sohu.tv.ip;
 
-import com.quiet.ip.IPUtil;
 
 /**
  * Copyright tv.sohu.com
@@ -22,12 +21,19 @@ public class IPRecord {
         this.netTypeId = netTypeId;
     }
 
-
     public long getStart() {
         return ipRange.getStart();
     }
     public long getEnd() {
         return ipRange.getEnd();
+    }
+
+    public int getAreaId() {
+        return areaId;
+    }
+
+    public int getNetTypeId() {
+        return netTypeId;
     }
 
     @Override
